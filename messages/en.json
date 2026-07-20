@@ -1,0 +1,220 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Expertise",
+    "listings": "Properties",
+    "owners": "Owners",
+    "buyers": "Buyers",
+    "collaboration": "Partnership",
+    "testimonials": "Testimonials",
+    "blog": "Journal",
+    "contact": "Contact",
+    "menu": "Menu"
+  },
+  "cta": {
+    "consult": "Request Advisory",
+    "listProperty": "List a Property",
+    "requestBuy": "Request a Purchase",
+    "exclusiveSale": "Exclusive Sale Partnership",
+    "viewOpportunities": "View Opportunities",
+    "requestConsult": "Request Advisory",
+    "requestInfo": "Request More Info",
+    "learnMore": "Learn More",
+    "callNow": "Call Now",
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram",
+    "viewAll": "View All",
+    "readMore": "Read More"
+  },
+  "hero": {
+    "eyebrow": "Javad Asadi — Real Estate Advisor in Sari & Mazandaran",
+    "title": "Beyond a transaction — a confident choice for your future",
+    "subtitle": "Specialized, confidential and professional deals in landmark land, luxury villas, industrial assets and investment opportunities.",
+    "scroll": "Explore"
+  },
+  "intro": {
+    "eyebrow": "Introduction",
+    "title": "An advisor, not a middleman",
+    "body": "I am Javad Asadi, a specialized real estate advisor in Sari and Mazandaran. My work is not merely posting listings — it is identifying genuine opportunities, precise property analysis, professional negotiation, and managing the deal to the final moment. With deep market knowledge and access to off-market opportunities, I introduce the value of your asset to the right market professionally and confidentially.",
+    "cta": "More about me"
+  },
+  "specialties": {
+    "eyebrow": "Expertise",
+    "title": "Focused on large, specialized deals",
+    "subtitle": "From landmark land and construction partnerships to industrial, coastal and luxury villa assets."
+  },
+  "featured": {
+    "eyebrow": "Selected opportunities",
+    "title": "Special & off-market properties",
+    "subtitle": "A selection of exclusive listings. Sensitive details are shared only after coordination.",
+    "empty": "No listings are publicly displayed right now. Contact me for exclusive opportunities."
+  },
+  "why": {
+    "eyebrow": "Why Javad Asadi?",
+    "title": "Why owners and investors trust me",
+    "items": [
+      { "title": "Deep market knowledge", "body": "A precise read of the Sari and Mazandaran market and realistic pricing." },
+      { "title": "Focus on specialized deals", "body": "Expertise in large, unique and complex transactions." },
+      { "title": "Access to exclusive listings", "body": "Opportunities you will not find on the open market." },
+      { "title": "Professional negotiation", "body": "Negotiating power that protects your interests to the fullest." },
+      { "title": "Full confidentiality", "body": "Discretion over property and owner information." },
+      { "title": "Careful due diligence", "body": "Legal and technical review before every deal." },
+      { "title": "Personal follow-through", "body": "Direct contact and follow-up until the deal is complete." },
+      { "title": "Contractual partnership", "body": "Exclusive, contractual collaboration for professional sales." }
+    ]
+  },
+  "servicesPage": {
+    "eyebrow": "Expertise",
+    "title": "My areas of work",
+    "subtitle": "For every area, specialized advisory and access to selected opportunities are available."
+  },
+  "listingsPage": {
+    "eyebrow": "Properties",
+    "title": "Selected opportunities",
+    "subtitle": "Submit a request for full details and a viewing.",
+    "labels": {
+      "type": "Property type",
+      "area": "Area",
+      "location": "Approx. location",
+      "deed": "Deed status",
+      "potential": "Potential",
+      "price": "Price",
+      "sqm": "sqm"
+    },
+    "back": "Back to listings",
+    "gallery": "Gallery",
+    "detailsNote": "Exact location and owner details are shared after coordination and verification."
+  },
+  "owners": {
+    "eyebrow": "For owners",
+    "title": "If you own a valuable property",
+    "lead": "I can manage the sale of your property professionally, confidentially and expertly.",
+    "body": "Land, villa, factory, commercial and office property, construction-partnership land, and large, unique estates — submit your property's initial details and I will contact you shortly.",
+    "types": ["Land", "Villa", "Factory", "Commercial", "Office", "Partnership land", "Large & unique estates"],
+    "formTitle": "List a property for sale"
+  },
+  "buyers": {
+    "eyebrow": "For buyers",
+    "title": "Looking for a special property?",
+    "lead": "Register your needs and I will present opportunities that match your budget and goal.",
+    "body": "Many of the best opportunities are never advertised publicly. By submitting a purchase request, you gain access to a network of exclusive listings.",
+    "formTitle": "Request a purchase"
+  },
+  "collaboration": {
+    "eyebrow": "Partnership",
+    "title": "A professional sale needs more than a listing",
+    "lead": "Engage in a professional, contractual partnership to sell your property expertly.",
+    "steps": [
+      { "title": "Property analysis", "body": "Precise assessment of value, potential and strengths." },
+      { "title": "Sales strategy", "body": "A sale path designed for the property type and target market." },
+      { "title": "Right buyers", "body": "Access to a network of genuine buyers and investors." },
+      { "title": "Targeted marketing", "body": "Professional presentation without exposing sensitive details." },
+      { "title": "Negotiation", "body": "Managing negotiations to achieve the best outcome." },
+      { "title": "Relationship management", "body": "Coordinating parties until the deal is finalized." },
+      { "title": "Confidentiality", "body": "Full discretion at every stage." },
+      { "title": "Follow-through", "body": "Support until contract and transfer." }
+    ],
+    "cta": "Request an exclusive partnership"
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "title": "Client experiences",
+    "subtitle": "This section is reserved for genuine client experiences.",
+    "note": "The texts below are samples and will be replaced with real testimonials as deals are completed.",
+    "sampleBadge": "Sample"
+  },
+  "blog": {
+    "eyebrow": "Journal",
+    "title": "Market insight & analysis",
+    "subtitle": "Notes on the Sari and Mazandaran real estate market.",
+    "publishedOn": "Published on",
+    "back": "Back to the journal"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Reach Javad Asadi directly",
+    "subtitle": "For specialized advisory, I am available through any of the channels below.",
+    "phoneLabel": "Phone",
+    "whatsappLabel": "WhatsApp",
+    "telegramLabel": "Telegram",
+    "locationLabel": "Location",
+    "location": "Sari, Mazandaran Province, Iran",
+    "formTitle": "Advisory form"
+  },
+  "form": {
+    "name": "Full name",
+    "phone": "Phone number",
+    "email": "Email (optional)",
+    "propertyType": "Property type",
+    "cityRegion": "City & region",
+    "area": "Area (sqm)",
+    "budget": "Budget",
+    "purpose": "Purchase purpose",
+    "needs": "Specific needs",
+    "description": "Description",
+    "collaborationType": "Preferred collaboration",
+    "uploads": "Upload images & documents",
+    "uploadsHint": "You can select multiple files (image or PDF).",
+    "message": "Your message",
+    "selectOption": "Select",
+    "submit": "Submit request",
+    "sending": "Sending…",
+    "success": "Your request has been received. I will contact you shortly.",
+    "error": "Submission failed. Please try again or contact me directly.",
+    "requiredNote": "Fields marked with * are required.",
+    "invalid": "Please complete the required fields correctly.",
+    "purposeOptions": ["Living", "Investment", "Construction partnership", "Commercial use", "Other"],
+    "collaborationOptions": ["Exclusive sale", "Contractual partnership", "Advisory", "Other"]
+  },
+  "footer": {
+    "brandLine": "Real Estate Advisor in Sari & Mazandaran",
+    "about": "Specialized, confidential and professional deals in landmark land, luxury villas, industrial assets and investment opportunities.",
+    "quickLinks": "Quick links",
+    "contactTitle": "Contact",
+    "rights": "All rights reserved.",
+    "disclaimer": "This website is a professional personal brand. Sensitive property information is shared only after coordination."
+  },
+  "meta": {
+    "home": {
+      "title": "Javad Asadi | Real Estate Advisor, Sari & Mazandaran",
+      "description": "Specialized real estate advisor in Sari and Mazandaran: land, forest and luxury villas, industrial, coastal properties and investment opportunities — professional and confidential."
+    },
+    "about": {
+      "title": "About Javad Asadi | Sari Real Estate Advisor",
+      "description": "Meet Javad Asadi, specialized advisor for large and exclusive real estate deals in Sari and Mazandaran."
+    },
+    "services": {
+      "title": "Expertise | Sari & Mazandaran Real Estate",
+      "description": "Urban land, construction partnership, industrial, coastal, forest and luxury villas, commercial and investment opportunities in Sari and Mazandaran."
+    },
+    "listings": {
+      "title": "Special & Off-Market Properties | Javad Asadi",
+      "description": "Exclusive, off-market listings in Sari and Mazandaran: land, villas, industrial and commercial property."
+    },
+    "owners": {
+      "title": "Professional Property Sales | For Owners",
+      "description": "Professional, confidential management of the sale of land, villas, factories and unique estates in Sari and Mazandaran."
+    },
+    "buyers": {
+      "title": "Request a Purchase | For Buyers",
+      "description": "Curated, off-market opportunities matched to your budget and goal in Sari and Mazandaran."
+    },
+    "collaboration": {
+      "title": "Contractual Partnership & Exclusive Sales | Javad Asadi",
+      "description": "Professional, contractual collaboration for the specialized sale of large and unique properties in Sari and Mazandaran."
+    },
+    "testimonials": {
+      "title": "Testimonials | Javad Asadi Real Estate Sari",
+      "description": "Client experiences of working with Javad Asadi on specialized real estate deals."
+    },
+    "blog": {
+      "title": "Sari & Mazandaran Real Estate Journal",
+      "description": "Expert notes and guides on real estate investment and deals in Sari and Mazandaran."
+    },
+    "contact": {
+      "title": "Contact Javad Asadi | Sari Real Estate Advisor",
+      "description": "Reach out directly for specialized real estate advisory in Sari and Mazandaran via phone, WhatsApp and Telegram."
+    }
+  }
+}
