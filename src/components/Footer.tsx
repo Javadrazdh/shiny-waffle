@@ -84,7 +84,7 @@ export async function Footer() {
 
         <div>
           <h3 className="text-sm uppercase tracking-widest text-cream/70">
-            {tc("eyebrow")}
+            {t("noteTitle")}
           </h3>
           <p className="mt-4 text-sm leading-relaxed text-muted">
             {t("disclaimer")}
