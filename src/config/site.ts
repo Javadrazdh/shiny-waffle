@@ -19,6 +19,21 @@ export const siteConfig = {
   },
   whatsapp: "https://wa.me/989122703669",
   telegram: "https://t.me/+989122703669",
+  // Colleague / partner contact.
+  colleague: {
+    name: {
+      fa: "مهندس سلیلی",
+      en: "Eng. Salili",
+      ar: "المهندس سلیلي",
+      ru: "Инж. Салили",
+    },
+    phone: {
+      display: "۰۹۳۰ ۰۷۸ ۵۵۷۷",
+      displayLatin: "0930 078 5577",
+      tel: "+989300785577",
+    },
+    whatsapp: "https://wa.me/989300785577",
+  },
   // Optional — fill in later when available.
   email: "",
   instagram: "",
@@ -32,9 +47,16 @@ export const siteConfig = {
   },
 } as const;
 
+export const advisorName: Record<Locale, string> = {
+  fa: "مهندس جواد اسدی",
+  en: "Eng. Javad Asadi",
+  ar: "المهندس جواد أسدي",
+  ru: "Инж. Джавад Асади",
+};
+
 export const brandName: Record<Locale, string> = {
-  fa: "جواد اسدی | املاک ساری",
-  en: "Javad Asadi Real Estate — Sari",
-  ar: "جواد أسدي للعقارات — ساري",
-  ru: "Джавад Асади Недвижимость — Сари",
+  fa: "مهندس جواد اسدی | املاک ساری",
+  en: "Eng. Javad Asadi Real Estate — Sari",
+  ar: "المهندس جواد أسدي للعقارات — ساري",
+  ru: "Инж. Джавад Асади Недвижимость — Сари",
 };

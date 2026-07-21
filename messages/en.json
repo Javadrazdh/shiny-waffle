@@ -28,7 +28,7 @@
     "readMore": "Read More"
   },
   "hero": {
-    "eyebrow": "Javad Asadi — Real Estate Advisor in Sari & Mazandaran",
+    "eyebrow": "Eng. Javad Asadi — Real Estate Advisor in Sari & Mazandaran",
     "title": "Beyond a transaction — a confident choice for your future",
     "subtitle": "Specialized, confidential and professional deals in landmark land, luxury villas, industrial assets and investment opportunities.",
     "scroll": "Explore"
@@ -36,7 +36,7 @@
   "intro": {
     "eyebrow": "Introduction",
     "title": "An advisor, not a middleman",
-    "body": "I am Javad Asadi, a specialized real estate advisor in Sari and Mazandaran. My work is not merely posting listings — it is identifying genuine opportunities, precise property analysis, professional negotiation, and managing the deal to the final moment. With deep market knowledge and access to off-market opportunities, I introduce the value of your asset to the right market professionally and confidentially.",
+    "body": "I am Eng. Javad Asadi, a specialized real estate advisor in Sari and Mazandaran. My work is not merely posting listings — it is identifying genuine opportunities, precise property analysis, professional negotiation, and managing the deal to the final moment. With deep market knowledge and access to off-market opportunities, I introduce the value of your asset to the right market professionally and confidentially.",
     "cta": "More about me"
   },
   "specialties": {
@@ -51,7 +51,7 @@
     "empty": "No listings are publicly displayed right now. Contact me for exclusive opportunities."
   },
   "why": {
-    "eyebrow": "Why Javad Asadi?",
+    "eyebrow": "Why Eng. Javad Asadi?",
     "title": "Why owners and investors trust me",
     "items": [
       { "title": "Deep market knowledge", "body": "A precise read of the Sari and Mazandaran market and realistic pricing." },
@@ -140,7 +140,12 @@
     "telegramLabel": "Telegram",
     "locationLabel": "Location",
     "location": "Sari, Mazandaran Province, Iran",
-    "formTitle": "Advisory form"
+    "formTitle": "Advisory form",
+    "teamTitle": "Our team",
+    "roleLead": "Lead advisor",
+    "roleColleague": "Colleague",
+    "callAction": "Call",
+    "whatsappAction": "WhatsApp"
   },
   "form": {
     "name": "Full name",

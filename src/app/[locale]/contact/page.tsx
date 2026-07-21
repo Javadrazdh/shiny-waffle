@@ -1,6 +1,6 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
-import { siteConfig } from "@/config/site";
+import { siteConfig, advisorName } from "@/config/site";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
 import { LeadForm } from "@/components/LeadForm";
@@ -24,6 +24,21 @@ export default async function ContactPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations();
+
+  const team = [
+    {
+      name: advisorName[locale],
+      role: t("contact.roleLead"),
+      phone: siteConfig.phone,
+      whatsapp: siteConfig.whatsapp,
+    },
+    {
+      name: siteConfig.colleague.name[locale],
+      role: t("contact.roleColleague"),
+      phone: siteConfig.colleague.phone,
+      whatsapp: siteConfig.colleague.whatsapp,
+    },
+  ];
 
   const channels = [
     {
@@ -100,6 +115,49 @@ export default async function ContactPage({
               <LeadForm formType="contact" />
             </div>
           </Reveal>
+        </div>
+      </section>
+
+      <section className="border-t border-line bg-ink-2 py-20">
+        <div className="container-luxe">
+          <Reveal>
+            <h2 className="text-display mb-8 text-center text-2xl text-cream md:text-3xl">
+              {t("contact.teamTitle")}
+            </h2>
+          </Reveal>
+          <div className="mx-auto grid max-w-3xl gap-6 sm:grid-cols-2">
+            {team.map((m, i) => (
+              <Reveal key={m.name} delay={i * 0.1}>
+                <div className="flex h-full flex-col gap-5 rounded-2xl border border-line bg-ink p-6 text-center">
+                  <div>
+                    <p className="text-display text-xl text-cream">{m.name}</p>
+                    <p className="mt-1 text-sm text-gold">{m.role}</p>
+                    <p className="mt-2 text-sm text-muted" dir="ltr">
+                      {m.phone.displayLatin}
+                    </p>
+                  </div>
+                  <div className="mt-auto flex justify-center gap-3">
+                    <a
+                      href={`tel:${m.phone.tel}`}
+                      className="inline-flex items-center gap-2 rounded-full border border-gold/50 px-4 py-2 text-sm text-gold transition-colors hover:bg-gold hover:text-ink"
+                    >
+                      <PhoneIcon className="size-4" />
+                      {t("contact.callAction")}
+                    </a>
+                    <a
+                      href={m.whatsapp}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 rounded-full border border-gold/50 px-4 py-2 text-sm text-gold transition-colors hover:bg-gold hover:text-ink"
+                    >
+                      <WhatsAppIcon className="size-4" />
+                      {t("contact.whatsappAction")}
+                    </a>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
     </>

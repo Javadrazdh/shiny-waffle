@@ -75,6 +75,20 @@ export async function Footer() {
                 Telegram
               </a>
             </li>
+            <li className="border-t border-line pt-3">
+              <a
+                href={`tel:${siteConfig.colleague.phone.tel}`}
+                className="flex items-center gap-2 text-muted transition-colors hover:text-gold"
+              >
+                <PhoneIcon className="size-4 text-gold" />
+                <span>
+                  {siteConfig.colleague.name[locale]}
+                  <span className="text-cream/50"> · {tc("roleColleague")}</span>
+                  <br />
+                  <span dir="ltr">{siteConfig.colleague.phone.displayLatin}</span>
+                </span>
+              </a>
+            </li>
             <li className="flex items-center gap-2 text-muted">
               <MapPinIcon className="size-4 text-gold" />
               {tc("location")}
