@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/components/Img";
 import { Link } from "@/i18n/navigation";
 import type { Listing } from "@/content/types";
 import type { Locale } from "@/i18n/routing";

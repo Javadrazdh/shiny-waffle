@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/components/Img";
 import { notFound } from "next/navigation";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";

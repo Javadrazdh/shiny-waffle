@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/components/Img";
 import { Eyebrow } from "./ui";
 
 export function PageHero({
