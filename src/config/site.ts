@@ -5,8 +5,12 @@ import type { Locale } from "@/i18n/routing";
  * Update these values to change contact details everywhere on the site.
  */
 export const siteConfig = {
-  // Update this to the production domain once purchased.
-  url: "https://javadasadi.com",
+  // Public site URL. Set NEXT_PUBLIC_SITE_URL at build time (e.g. the GitHub
+  // Pages URL, or a custom domain once purchased).
+  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://javadasadi.com").replace(
+    /\/$/,
+    "",
+  ),
   defaultOgImage: "/images/og-default.jpg",
   phone: {
     display: "۰۹۱۲ ۲۷۰ ۳۶۶۹",

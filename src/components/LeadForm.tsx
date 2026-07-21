@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { CheckIcon } from "./icons";
+import { siteConfig } from "@/config/site";
 
 type FormType = "contact" | "owner" | "buyer" | "collaboration";
 
@@ -64,20 +65,36 @@ export function LeadForm({ formType }: { formType: FormType }) {
     return Array.isArray(value) ? (value as string[]) : [];
   }
 
-  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+  function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
-    setStatus("sending");
-    try {
-      const data = new FormData(form);
-      data.append("formType", formType);
-      const res = await fetch("/api/lead", { method: "POST", body: data });
-      if (!res.ok) throw new Error("failed");
+    const data = new FormData(form);
+
+    // Honeypot: real users never fill this — silently ignore bots.
+    if ((data.get("company") as string)?.trim()) {
       setStatus("success");
       form.reset();
-    } catch {
-      setStatus("error");
+      return;
     }
+
+    setStatus("sending");
+
+    const lines: string[] = [`${t("waIntro")} (${t(`kind.${formType}`)})`];
+    for (const field of fields) {
+      if (field.kind === "files") continue;
+      const value = (data.get(field.name) as string)?.trim();
+      if (value) lines.push(`${t(field.labelKey)}: ${value}`);
+    }
+    const text = encodeURIComponent(lines.join("\n"));
+    const url = `${siteConfig.whatsapp}?text=${text}`;
+
+    const opened = window.open(url, "_blank", "noopener,noreferrer");
+    if (!opened) {
+      // Popup blocked — fall back to navigating the current tab.
+      window.location.href = url;
+    }
+    setStatus("success");
+    form.reset();
   }
 
   if (status === "success") {
@@ -92,7 +109,7 @@ export function LeadForm({ formType }: { formType: FormType }) {
   }
 
   return (
-    <form onSubmit={onSubmit} className="flex flex-col gap-5" noValidate>
+    <form onSubmit={onSubmit} className="flex flex-col gap-5">
       {/* Honeypot — hidden from users, bots fill it */}
       <div className="absolute -left-[9999px]" aria-hidden="true">
         <label>

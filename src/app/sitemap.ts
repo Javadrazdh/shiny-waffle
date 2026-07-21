@@ -4,6 +4,8 @@ import { siteConfig } from "@/config/site";
 import { navItems } from "@/lib/nav";
 import { getListings, getPosts } from "@/content";
 
+export const dynamic = "force-static";
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = siteConfig.url;
   const staticPaths = ["", ...navItems.map((n) => n.href)];
